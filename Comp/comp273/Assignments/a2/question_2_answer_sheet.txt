@@ -1,0 +1,21 @@
+##### Enter your answers for each specific sub-question of the question#2 as a single decimal number without any quantity.               #####
+##### For example, Q2.A: 10.34 																										     #####
+##### In this file, do not write anything else other than the final answers for the sub-questions of question#2. 					     #####
+##### Also, do not edit the structure of this file.        			 																  	 ##### 
+##### If you require to explain something regarding your answers, add an explanation typeset- or handwritten-file to your answer-folder. #####
+
+Q2.A: 0.45
+
+Q2.B: 2288.82
+
+Q2.C: 550
+
+Q2.D: 1650
+
+Q2.E: 2500000000
+
+Q2.F: 500000000
+
+Q2.G: 200000000
+
+Q2.H: 499999999

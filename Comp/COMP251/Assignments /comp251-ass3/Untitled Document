@@ -1,0 +1,19 @@
+ArrayList<Integer> Stack = new ArrayList<Integer>();
+		visitedNodes.add(source);
+		Stack.add(source);
+		if (source == destination) {
+			visitedNodes.clear();
+			return Stack;
+		}
+		else {
+			ArrayList<Integer> adj = getAdj(source,graph);
+			for (int i = 0; i < adj.size(); i++){
+				Integer adjNode = adj.get(i);
+				if (!visitedNodes.contains(adjNode)) {
+					visitedNodes.add(adjNode);
+					Stack.addAll(pathDFS(adjNode,destination,graph));
+					return Stack;
+				}
+			}
+		}
+		return Stack;
