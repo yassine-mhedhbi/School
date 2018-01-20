@@ -74,5 +74,15 @@ plt.show()
 
 print("==================================================")
 
+test = pd.read_csv("Datasets/Dataset_1_test.csv", header = -1,usecols=range(2))
+cols = ["x","y"]
+test.columns = cols
+test.head() 
 
+X = test['x'].tolist()
+X.sort()
+Y = [Poly(i) for i in X ]
+plt.plot(X,Y)
+plt.scatter(test['x'],test['y'])
+plt.show()
     
