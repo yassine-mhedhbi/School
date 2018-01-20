@@ -9,7 +9,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-data = pd.read_csv("Dataset_1_train.csv",header=-1, usecols=range(2))
+data = pd.read_csv("Datasets/Dataset_1_train.csv",header=-1, usecols=range(2))
 cols = ["x","y"]
 data.columns = cols
 #data.head()
@@ -53,7 +53,7 @@ for i in range(len(new_y)):
     sigma = sigma + (new_y[i] - y[i])**2 
 print("The Training mean square error is:",sigma/len(y))
 print("==================================================")
-valid = pd.read_csv("Dataset_1_valid.csv",header=-1,usecols=range(2))
+valid = pd.read_csv("Datasets/Dataset_1_valid.csv",header=-1,usecols=range(2))
 cols = ["x","y"]
 valid.columns = cols
 #data.head()
